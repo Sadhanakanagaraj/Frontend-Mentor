@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jacquard+24&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; color: white;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background-color: hsl(0, 0%, 8%);
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+    }
+    .container{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 300px;
+      max-width: 450px;
+      max-height: 600px;
+      background-color: hsl(0, 0%, 12%);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      box-sizing: content-box;
+    }
+    #img{
+      height: 70px;
+      width: 70px;
+      border-radius: 50px;
+      border: 1px solid white;
+      align-self: center;
+      margin: 20px 0 10px 0;
+      background-image: url(./assets/images/avatar-jessica.jpeg);
+      background-position: center;
+      background-size: contain;
+    }
+    p:nth-of-type(1){
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    p:nth-of-type(2){
+      color: yellow;
+    }
+    p:nth-of-type(3){
+      margin: 10px 0 5px 0;
+      color: white;
+    }
+    .social{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .social a{
+      background-color: hsl(0, 0%, 20%);
+      margin: 5px;
+      padding: 5px;
+      width: 200px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    .social a:last-of-type{
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div id="img"></div>
+      <p>Jessica Randall</p>
+      <p>London, United Kingdom</p>
+      <p>"Front-end developer and avid reader."</p>
+      <div class="social">
+        <a href="">GitHub</a>
+        <a href="">Frontend Mentor</a>
+        <a href="">KinkedIn</a>
+        <a href="">Twitter</a>
+        <a href="">Instagram</a>
+      </div>
+    </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sadhana_K</a>.
+  </div>
+</body>
+</html>
